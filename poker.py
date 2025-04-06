@@ -5,61 +5,64 @@ def check(cards):
     '''手札の役をstrでreturnする'''
     hand = ''
     
-    clear1 = [
-           ['A',2,3,4,5],
-           [10,'J','Q','K','A'],
-           ]
-    clear2 = [
-            # ['A',2,3,4,5],!
-           [2,3,4,5,6],
-           [3,4,5,6,7],
-           [4,5,6,7,8],
-           [5,6,7,8,9],
-           [6,7,8,9,10],
-           [7,8,9,10,'J'],
-           [8,9,10,'J','Q'],
-           [9,10,'J','Q','K'],
-            # [10,'J','Q','K','A'],
-           ]
-
-
     count1 = 0
-    count2 = 0
-    count3 = 0
-
-    # ロイヤルストレートフラッシュ
-    for i in range(len(clear1)):
-        count2 == 0
-        for j in range(len(clear1[i])):
-            for k in range(len(cards)):
-                if clear1[i][j] == cards[k][1]:
-                    count2 += 1
-                    if count2 == 5:
-                        hand = 'ロイヤルストレートフラッシュ'
-                        break
-        if count2 == 5:
-            break
-        
-    if hand != '':
-        return hand
-
     
-    # ストレートフラッシュ
-    for i in range(len(clear2)):
-        for j in range(len(clear2[i])):
-            count3 = 0
-            for k in range(len(cards)):
-                if clear2[i][j]== cards[k][1]:
-                    count3 += 1
-                    if count3 == 5:
-                        hand = 'ストレートフラッシュ'
-                        break
-            
-        if count3 == 5:
-            break
-            
-    if hand != '':
-        return hand
+# =============================================================================
+#     count2 = 0
+#     count3 = 0
+#     clear1 = [
+#            ['A',2,3,4,5],
+#            [10,'J','Q','K','A'],
+#            ]
+#     clear2 = [
+#             # ['A',2,3,4,5],!
+#            [2,3,4,5,6],
+#            [3,4,5,6,7],
+#            [4,5,6,7,8],
+#            [5,6,7,8,9],
+#            [6,7,8,9,10],
+#            [7,8,9,10,'J'],
+#            [8,9,10,'J','Q'],
+#            [9,10,'J','Q','K'],
+#             # [10,'J','Q','K','A'],
+#            ]
+# 
+# 
+# 
+#     # ロイヤルストレートフラッシュ
+#     for i in range(len(clear1)):
+#         count2 == 0
+#         for j in range(len(clear1[i])):
+#             for k in range(len(cards)):
+#                 if clear1[i][j] == cards[k][1]:
+#                     count2 += 1
+#                     if count2 == 5:
+#                         hand = 'ロイヤルストレートフラッシュ'
+#                         break
+#         if count2 == 5:
+#             break
+#         
+#     if hand != '':
+#         return hand
+# 
+#     
+#     # ストレートフラッシュ
+#     for i in range(len(clear2)):
+#         for j in range(len(clear2[i])):
+#             count3 = 0
+#             for k in range(len(cards)):
+#                 if clear2[i][j]== cards[k][1]:
+#                     count3 += 1
+#                     if count3 == 5:
+#                         hand = 'ストレートフラッシュ'
+#                         break
+#             
+#         if count3 == 5:
+#             break
+#             
+#     if hand != '':
+#         return hand
+# =============================================================================
 
 
     # フラッシュ
@@ -190,7 +193,7 @@ while i < 5:
 # cards = [deck[16],deck[15],deck[1],deck[30],deck[44]]
 
 # フラッシュ
-cards = [deck[9],deck[5],deck[0],deck[11],deck[3]]
+# cards = [deck[9],deck[5],deck[0],deck[11],deck[3]]
 
 # フルハウス
 # cards = [deck[0],deck[13],deck[26],deck[4],deck[17]]
@@ -203,6 +206,7 @@ cards = [deck[9],deck[5],deck[0],deck[11],deck[3]]
 
 # ロイヤルストレートフラッシュ
 # cards = [deck[9],deck[10],deck[11],deck[12],deck[0]]
+
 
 
 # 表示
